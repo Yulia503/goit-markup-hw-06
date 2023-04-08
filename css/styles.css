@@ -499,9 +499,16 @@ img {
 }
 
 .footer-form-input:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(246, 246, 246, 0.128),
+        0px 1px 1px rgba(243, 244, 249, 0.16),
+        0px 2px 1px rgba(213, 214, 227, 0.08);
+}
+
+.footer-form-input::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--white-text);
 }
 .modal-form-footer {
     display: flex;
