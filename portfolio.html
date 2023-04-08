@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -332,6 +332,27 @@
                 </ul>
             </div>
 
+            <div class="footer-email-form">
+                <p class="footer-email-subscribe">Subscribe</p>
+                <form class="modal-form-footer">
+                    <label class="modal-form-field">
+                        <span class="footer-form-btn-wrapper">
+                            <input type="email" name="user-email"
+                                class="footer-form-input" required
+                                placeholder="E-mail" pattern="^\S+@\S+\.\S+$"
+                                title="example@mail.com"></input>
+                            <button type="submit"
+                                class="modal-form-submit footer">Subscribe
+                                <svg class="footer-btn-send-icon">
+                                    <use
+                                        href="./images/sprite.svg#icon-button-send">
+                                    </use>
+                                </svg>
+                            </button>
+                        </span>
+                    </label>
+                </form>
+            </div>
         </div>
     </footer>
 
