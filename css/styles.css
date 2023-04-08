@@ -714,6 +714,61 @@ img {
 .modal-form-message {
     resize: none;
     width: 100%;
+    height: 100%;
     padding-top: 8px;
     padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    transition: border-colour cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+}
+
+.modal-form-message:focus {
+    border-color: var(--accent-colour);
+    outline: none;
+}
+
+.modal-form-message:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-form-message::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+/**------------checkbox------------------*/
+
+.modal-form-check-desc::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: border-colour cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+    background-color: var(--accent-btn);
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: border-colour cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-form-check:focus + .modal-form-check-desc::before {
+    outline: 2px solid var(--accent-btn);
+    
 }
